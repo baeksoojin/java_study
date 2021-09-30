@@ -1,6 +1,5 @@
 package java_study;
 
-
 import java.util.Scanner;
 
 public class study_3_soorim{
