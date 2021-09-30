@@ -68,5 +68,4 @@ public class TVUser_soorim {
 			System.out.println("최종 채널 넘버: " + channel + ", 볼륨량: " + volume);
 		}	
 	}
-
 }
