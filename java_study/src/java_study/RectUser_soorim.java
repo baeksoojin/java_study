@@ -3,7 +3,8 @@ package java_study;
 import java.util.Scanner;
 
 public class RectUser_soorim {
-public static void main(String[] args) {
+	
+	public static void main(String[] args) {
 		
 		System.out.print("너비와 높이를 입력하세요: ");
 		Scanner scan=new Scanner(System.in);

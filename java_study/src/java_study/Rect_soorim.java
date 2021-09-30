@@ -10,4 +10,5 @@ public class Rect_soorim {
 		double Circum=2*(width+height);
 		return Circum;
 	}
+	
 }
