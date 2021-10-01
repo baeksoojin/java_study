@@ -30,9 +30,6 @@ public class Animal {	//Å¬·¡½º
 		System.out.println(dog.name);
 		System.out.println(horse.name);
 		
-		
-		
-
 	}
 
 }
