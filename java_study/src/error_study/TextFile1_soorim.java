@@ -19,7 +19,7 @@ import java.util.List;
 6. 최종적으로 third.txt 파일에 적혀 있는 문자를 읽어오기.
 */
 
-public class TextFile {
+public class TextFile1_soorim {
 	    public static void main(String[] args) {
 		try {
 		    OutputStream os_first = new FileOutputStream("C:\\Users\\smile\\Desktop\\3학년 2학기\\모바일소프트웨어\\File 입출력\\first.txt");
