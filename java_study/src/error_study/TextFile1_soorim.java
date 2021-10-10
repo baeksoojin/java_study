@@ -9,6 +9,8 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+// soorim
+
 /*
 1. 메모장 파일 생성 후 숫자들을 하나의 String으로 지정해 파일에 저장. (first.txt, second.txt)
 2. 메모장 파일에서 값을 읽어와서 " " 단위로 나누고, 이를 문자열 배열에 저장. (first_str, second_str)
