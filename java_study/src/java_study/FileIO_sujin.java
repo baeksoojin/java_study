@@ -1,41 +1,49 @@
 package java_study;
 
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Scanner;
+import java.io.*;
 
-public class FileIO_sujin {
-	
-	public static void main(String[] args) throws IOException{
-		
-			Scanner first = new Scanner(new File("C:\\Users\\백수진\\OneDrive\\바탕 화면\\3학년2학기\\모바일소프트웨어\\first.txt"));
-			Scanner second = new Scanner(new File("C:\\Users\\백수진\\OneDrive\\바탕 화면\\3학년2학기\\모바일소프트웨어\\second.txt"));
+public class FileIO_sujin {public static void main(String[] args)throws IOException{
+	FileInputStream first = null;
+	FileInputStream second = null;
+	try {
+			first = new FileInputStream("C:\\Users\\백수진\\OneDrive\\바탕 화면\\3학년2학기\\모바일소프트웨어\\first.txt");
+			second = new FileInputStream("C:\\Users\\백수진\\OneDrive\\바탕 화면\\3학년2학기\\모바일소프트웨어\\second.txt");
+			int size = first.available();
+			System.out.print(size);
+			int f_array[] = new int[size];
+			int s_array[] = new int[size];
 			
-			int f_array[] = new int[10];
-			int s_array[] = new int[10];
-			
-			int i=0;
-			while(first.hasNext()) {
-				f_array[i] = first.nextInt();
-				i+=1;
+			for(int i=0; i<size; i++) {
+				f_array[i] = first.read();
+				s_array[i] = second.read();
+			}
+			for(int i=0; i<10; i++) {
 				
+				System.out.print(f_array[i]+" ");
+				System.out.print(s_array[i]+" ");
 			}
 			
-			i=0;
-			while(second.hasNext()) {
-				s_array[i] = second.nextInt();
-				i+=1;
-			}
 			
-			for(int j=0; j<f_array.length; j++) {
+			OutputStream os = new FileOutputStream("C:\\Users\\백수진\\OneDrive\\바탕 화면\\3학년2학기\\모바일소프트웨어\\result.txt");
+			for(int j=0; j<size; j++) {
 				
-				for(int k=0; k<s_array.length; k++) {
+				for(int k=0; k<size; k++) {
 					if(f_array[j] == s_array[k]) {
-						System.out.print(f_array[j]+" ");
+						os.write(f_array[j]);
+						System.out.print(f_array[j]);
+						
 					}
 				}
 			}
+			
+			os.close();
+	}catch(Exception e){
+		e.getStackTrace();
+		
 	}
+	
+	
+}
 }
 
