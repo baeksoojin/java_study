@@ -1,12 +1,11 @@
 package java_study;
 
-
 import java.io.*;
 import java.util.Scanner;
 
-public class FileIO_sujin {
-	public static void main(String[] args)throws IOException{
-		
+public class fileio1 {
+	
+	public static void main(String[] args) throws IOException{
 		
 		Scanner first = new Scanner(new File("C:\\Users\\백수진\\OneDrive\\바탕 화면\\3학년2학기\\모바일소프트웨어\\first.txt"));
 		Scanner second = new Scanner(new File("C:\\Users\\백수진\\OneDrive\\바탕 화면\\3학년2학기\\모바일소프트웨어\\second.txt"));
