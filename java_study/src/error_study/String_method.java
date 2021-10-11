@@ -10,6 +10,7 @@ public class String_method {
 		for(int i=0; i<st_array.length; i++) {
 			System.out.print(st_array[i]);
 		}
+		//length를 활용할때 배열의 길이를 측정하려면 ()를 제거해야함. 문자열의 길이를 측정할 땐 length()가 맞음.
 		
 		
 	}
