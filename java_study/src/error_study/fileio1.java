@@ -9,6 +9,7 @@ public class fileio1 {
 		
 		Scanner first = new Scanner(new File("C:\\Users\\백수진\\OneDrive\\바탕 화면\\3학년2학기\\모바일소프트웨어\\first.txt"));
 		Scanner second = new Scanner(new File("C:\\Users\\백수진\\OneDrive\\바탕 화면\\3학년2학기\\모바일소프트웨어\\second.txt"));
+		//File을 int형태로 읽어오려면 Scanner를 사용하면 가능함.
 		
 		int f_array[] = new int[10];
 		int s_array[] = new int[10];
