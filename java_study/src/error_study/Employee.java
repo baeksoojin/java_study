@@ -1,6 +1,7 @@
 package error_study;
 
 // soorim
+
 public class Employee extends Person {
 	String employeeID; //8자리 숫자로 구성
 	int monthlySalary;

@@ -1,6 +1,7 @@
 package error_study;
 
 // soorim
+
 public class Person {
 	String personName;
 	String birthDate; //yyyy/mm/dd 포멧

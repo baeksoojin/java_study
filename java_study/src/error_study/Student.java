@@ -1,6 +1,7 @@
 package error_study;
 
 // soorim 
+
 public class Student extends Person {
 	String studentID; //10자리로 구성
 	double GPA;
