@@ -1,5 +1,7 @@
 package java_study;
 
+//soorim
+
 public class Person {
 	
 	String personName;

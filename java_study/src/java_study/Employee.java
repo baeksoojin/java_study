@@ -1,6 +1,7 @@
 package java_study;
-
 import java.util.Scanner;
+
+//soorim
 
 public class Employee extends Person{
 	
@@ -20,13 +21,13 @@ public class Employee extends Person{
 	
 	public static void main(String[] args) {
 		
-		Employee e1 = new Employee("±è¼öÁø","2000/02/03","¸¶Æ÷±¸",3000000,"20191121");
-		Employee e2 = new Employee("ÀÌ¼öÁ¤","2000/10/20","Áß±¸",3100000,"20191122");
-		Employee e3 = new Employee("ÇÑ¼öÈ£","2000/11/11","¿ë»ê±¸",33000000,"20191123");
-		Employee e4 = new Employee("¹ÚÁø¾ß","2000/07/21","ÇÏ³²½Ã",2300000,"20191124");
-		Employee e5 = new Employee("¹é¼öÁø","2000/10/02","Ã»·®¸®",5000000,"20191125");
+		Employee e1 = new Employee("ï¿½ï¿½ï¿½ï¿½ï¿½","2000/02/03","ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",3000000,"20191121");
+		Employee e2 = new Employee("ï¿½Ì¼ï¿½ï¿½ï¿½","2000/10/20","ï¿½ß±ï¿½",3100000,"20191122");
+		Employee e3 = new Employee("ï¿½Ñ¼ï¿½È£","2000/11/11","ï¿½ï¿½ê±¸",33000000,"20191123");
+		Employee e4 = new Employee("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","2000/07/21","ï¿½Ï³ï¿½ï¿½ï¿½",2300000,"20191124");
+		Employee e5 = new Employee("ï¿½ï¿½ï¿½ï¿½ï¿½","2000/10/02","Ã»ï¿½ï¿½ï¿½ï¿½",5000000,"20191125");
 		
-		System.out.println("±Þ¿©È®ÀÎÀ» ¿øÇÏ´Â »ç¶÷À» ÀÔ·ÂÇÏ¼¼¿ä.[¿¹: ¹é¼öÁø]");
+		System.out.println("ï¿½Þ¿ï¿½È®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.[ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½]");
 		Scanner sc = new Scanner(System.in);
 		String who = sc.next();
 		
