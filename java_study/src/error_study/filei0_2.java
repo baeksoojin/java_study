@@ -31,8 +31,6 @@ public static void main(String[] args) throws IOException{
 				if(first_array[j]==second_array[k]) {
 					System.out.print(first_array[j]+" ");
 					data +=first_array[j]+" ";
-					//os.write(f_array[j]+" ");을 사용한다면 이상한 문자가 파일에 저장됨.
-					//FileOutputStream은 문자열로 입출력을 하며 byte단위로 바꿔줘야함. getBytes()를 활용.
 				}
 			}
 		}
