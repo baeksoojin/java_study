@@ -41,7 +41,12 @@ public class problem_2108 {
 			array[i] = sc.nextInt();
 			sum+=array[i];
 		}
-		System.out.println(Math.round((double)(sum/n)));
+		if(sum>=0)
+			System.out.println((int)((double)sum/(double)n+0.5));
+		//round는 소수점자리가 부호와 상관없이 0.5이상이라면 +1을 시켜줌. => 음수일때 반올림이 제대로 되지 않음.
+		else
+			System.out.println((int)((double)sum/(double)n-0.5));
+			
 		
 		problem_2108 pro = new problem_2108();
 		for(int i=0; i<n; i++) {
