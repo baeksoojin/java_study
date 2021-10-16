@@ -1,4 +1,5 @@
 package java_study;
+
 public class Human_soorim extends Character_soorim {
 
     @Override
