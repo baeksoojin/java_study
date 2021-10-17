@@ -21,6 +21,10 @@ public class game2_soorim{
 			//캐릭터가 Barlog인 경우 두 번 공격.
             //instanceof 를 사용해 객체와 클래스가 같은지 비교한다.
 			if(blue instanceof Barlog) {
+				//두 번째 공격을 하기 전, 캐릭터가 죽은 경우 공격 종료.
+				if(red.isDie()==true) {
+					break;
+				}
 				blue.whoAmI();
 				System.out.print(" attacks with damage ");
 				blue.attack(red);
@@ -48,6 +52,10 @@ public class game2_soorim{
 			
 			//캐릭터가 Barlog인 경우 두 번 공격.
 			if(red instanceof Barlog) {
+				//두 번째 공격을 하기 전, 캐릭터가 죽은 경우 공격 종료.
+				if(blue.isDie()==true) {
+					break;
+				}
 				red.whoAmI();
 				System.out.print(" attacks with damage ");
 				red.attack(blue);
