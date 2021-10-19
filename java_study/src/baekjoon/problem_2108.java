@@ -1,5 +1,6 @@
 package baekjoon;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class problem_2108 {
@@ -38,7 +39,7 @@ public class problem_2108 {
 //		버블정렬을 이용한 정렬은 배열의 크기만큼 비교를 계속 진행하기에 시간복잡도가 o(n^2)로 너무 느림.
 		
 		//Arryas.sort()의 경우 객체 타입일 경우 최악의 경우 nlogn. => n2보다는 항상 좋음.=> 버블정렬보다 좋음
-		
+		Arrays.sort(array);
 		
 		System.out.println(array[n/2]);
 		
