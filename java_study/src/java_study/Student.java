@@ -1,6 +1,6 @@
 package java_study;
 
-import java.util.Scanner;
+import java.util.Vector;
 
 public class Student extends Person {
 	
@@ -24,23 +24,19 @@ public class Student extends Person {
 		Student s4 = new Student("백진희","2010/07/21","하남시",400000,"2010112084");
 		Student s5 = new Student("박상혁","2010/10/02","청량리",500000,"2010112085");
 		
-		System.out.println("GPA 확인을 원하는 사람을 입력하세요.[예: 박시원]");
-		Scanner sc = new Scanner(System.in);
-		String who = sc.next();
+		Vector<Person> student = new Vector<Person>();
 		
+		student.add(s1);
+		student.add(s2);
+		student.add(s3);
+		student.add(s4);
+		student.add(s5);
 		
-		if(s1.personName.equals(who))
-			System.out.println(s1.getGPA());
-		if(s2.personName.equals(who))
-			System.out.println(s2.getGPA());
-		if(s3.personName.equals(who))
-			System.out.println(s3.getGPA());
-		if(s4.personName.equals(who))
-			System.out.println(s4.getGPA());
-		if(s5.personName.equals(who))
-			System.out.println(s5.getGPA());
+		System.out.println("벡터를 활용한 student의 이름 출력");
+		for(int i=0; i<student.size(); i++) {
+			System.out.println(student.get(i).personName);
+		}
 		
-		sc.close();
 	}
 
 }

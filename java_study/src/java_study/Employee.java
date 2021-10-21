@@ -1,6 +1,6 @@
 package java_study;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Employee extends Person{
 	
@@ -26,32 +26,20 @@ public class Employee extends Person{
 		Employee e4 = new Employee("박진야","2000/07/21","하남시",2300000,"20191124");
 		Employee e5 = new Employee("백수진","2000/10/02","청량리",5000000,"20191125");
 		
-		System.out.println("급여확인을 원하는 사람을 입력하세요.[예: 백수진]");
-		Scanner sc = new Scanner(System.in);
-		String who = sc.next();
+		Vector<Person> employee = new Vector<Person>();
 		
+		employee.add(e1);
+		employee.add(e2);
+		employee.add(e3);
+		employee.add(e4);
+		employee.add(e5);
 		
-		if(e1.personName.equals(who)) {
-			System.out.println(who + " : "+e1.getMonthlySalary());
-		}
-		else if(e2.personName.equals(who))
-		{
-			System.out.println(who + " : "+e2.getMonthlySalary());
-		}
-		else if(e3.personName.equals(who))
-		{
-			System.out.println(who + " : "+e3.getMonthlySalary());
-		}
-		else if(e4.personName.equals(who))
-		{
-			System.out.println(who + " : "+e4.getMonthlySalary());
-		}
-		else{
-			System.out.println(who + " : "+e5.getMonthlySalary());
+		System.out.println("벡터를 활용한 employee의 이름 출력");
+		for(int i=0; i<employee.size(); i++) {
+			System.out.println(employee.get(i).personName);
 		}
 		
 		
-		sc.close();
 	}
 	
 }
