@@ -5,7 +5,6 @@ public class Calc_soorim <T>{
 		for(int i=0; i<arr.length; i++) {
 			result+=Double.parseDouble(arr[i]+"");	//문자열에서 double형으로 바꾸는 방법. -> 제네릭을 사용하면 해당 배열을 문자열로 인식한다.
 		}
-		
 		return result;
 	}
 	
@@ -23,7 +22,6 @@ public class Calc_soorim <T>{
 			result+=Double.parseDouble(arr[i]+"");	//문자열에서 double형으로 바꾸는 방법
 		}
 		result=result/arr.length;
-		
 		return result;
 	}
 
