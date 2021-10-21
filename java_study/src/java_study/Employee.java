@@ -1,5 +1,10 @@
 package java_study;
+<<<<<<< HEAD
 import java.util.Scanner;
+=======
+
+import java.util.*;
+>>>>>>> e37bc178204f5f55ca46b39e402e0bb8825e080b
 
 //soorim
 
@@ -27,32 +32,26 @@ public class Employee extends Person{
 		Employee e4 = new Employee("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","2000/07/21","ï¿½Ï³ï¿½ï¿½ï¿½",2300000,"20191124");
 		Employee e5 = new Employee("ï¿½ï¿½ï¿½ï¿½ï¿½","2000/10/02","Ã»ï¿½ï¿½ï¿½ï¿½",5000000,"20191125");
 		
+<<<<<<< HEAD
 		System.out.println("ï¿½Þ¿ï¿½È®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.[ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½]");
 		Scanner sc = new Scanner(System.in);
 		String who = sc.next();
+=======
+		Vector<Person> employee = new Vector<Person>();
+>>>>>>> e37bc178204f5f55ca46b39e402e0bb8825e080b
 		
+		employee.add(e1);
+		employee.add(e2);
+		employee.add(e3);
+		employee.add(e4);
+		employee.add(e5);
 		
-		if(e1.personName.equals(who)) {
-			System.out.println(who + " : "+e1.getMonthlySalary());
-		}
-		else if(e2.personName.equals(who))
-		{
-			System.out.println(who + " : "+e2.getMonthlySalary());
-		}
-		else if(e3.personName.equals(who))
-		{
-			System.out.println(who + " : "+e3.getMonthlySalary());
-		}
-		else if(e4.personName.equals(who))
-		{
-			System.out.println(who + " : "+e4.getMonthlySalary());
-		}
-		else{
-			System.out.println(who + " : "+e5.getMonthlySalary());
+		System.out.println("º¤ÅÍ¸¦ È°¿ëÇÑ employeeÀÇ ÀÌ¸§ Ãâ·Â");
+		for(int i=0; i<employee.size(); i++) {
+			System.out.println(employee.get(i).personName);
 		}
 		
 		
-		sc.close();
 	}
 	
 }
