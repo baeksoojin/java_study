@@ -51,12 +51,13 @@ public class Calc<T,I> {
 		Calc<Integer,Integer> int_calc = new Calc<Integer,Integer>();
 		Calc<Double,Integer> double_calc = new Calc<Double,Integer>();
 		
-		Integer n = (Integer)int_array.length;
+		Integer n1 = (Integer)int_array.length;
+		Integer n2 = (Integer)double_array.length;
 		
 		System.out.println("Integer의 sum: "+int_calc.Sum(int_array));
 		System.out.println("Double의 sum: "+double_calc.Sum(double_array));
-		System.out.println("Integer의 avg: "+int_calc.Avg(int_calc.Sum(int_array),n));
-		System.out.println("Double의 avg: " + double_calc.Avg(double_calc.Sum(double_array),n));	
+		System.out.println("Integer의 avg: "+int_calc.Avg(int_calc.Sum(int_array),n1));
+		System.out.println("Double의 avg: " + double_calc.Avg(double_calc.Sum(double_array),n2));	
 		
 		
 		
